@@ -1,5 +1,5 @@
 # Chatroom repo
--Works on the same LAN only.
+-Works on the same LAN only.\n
 -Will need 3 or more machines to fully use ( one for server and two for clients )
 -Find IP address of your machine using a command like ipinfo or ipconfig.
 -Assign that IP address to host variable in the server code.
