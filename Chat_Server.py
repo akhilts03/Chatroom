@@ -1,6 +1,3 @@
-#authors: Akhil Thirukonda Sivakumar + Amit Sonaje
-#Roll nos: 2103106 + 2103107 
-
 
 # This is the Server program
 # Sequence of steps:
