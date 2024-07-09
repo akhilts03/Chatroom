@@ -5,4 +5,4 @@
 -Assign that IP address to host variable in the server code.\
 -Start the Chat_Server.py file on that machine.\
 -Assign the same IP address to host variable in the client code.\
--Start the Chat_Client.py program on another machine(can use more than one).\
+-Start the Chat_Client.py program on another machine(can use more than one).
