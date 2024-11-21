@@ -17,12 +17,12 @@ client = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 # The second argument is SOCK_STREAM for TCP service
 #    and SOCK_DGRAM for UDP service
 
-# connect to the server
+# connect to the server 
 host='10.196.8.172' #use server's IP address
 port=43389  # this is the server's port number, which the client needs to know
 client.connect((host, port))
 
-def receive():
+def receive(): # read thread
     while(True):
         try:
             message = client.recv(1024).decode()
@@ -37,9 +37,9 @@ def receive():
             client.close() 
             break 
         
-def take_input():
+def take_input(): #write thread 
     while(True):
-        val=input() # write your message here
+        val=input() # write your message here 
         message = f'{person}: {val}'
         client.send(message.encode('utf-8'))
         if(val=="/q"):  

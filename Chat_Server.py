@@ -59,9 +59,9 @@ def remove(connection):
 
 while True:
     
-    conn,addr = s.accept()
+    conn,addr = s.accept() # returns a socket object for the client, and a tuple containing the client's IP addr and port no.
     clientlist.append(conn)
     print(addr[0]+" " + "connected")
     
-    start_new_thread(clientthread,(conn,addr))
+    start_new_thread(clientthread,(conn,addr)) # individual receive thread for each client
 
